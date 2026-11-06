@@ -1,0 +1,20 @@
+{
+  "name": "teras-bakaran",
+  "private": true,
+  "description": "Website pemesanan dan dashboard admin Teras Bakaran",
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @teras/web dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "cek": "pnpm typecheck && pnpm test && pnpm build",
+    "uji:db": "pnpm --filter @teras/data uji:db"
+  },
+  "devDependencies": {
+    "axe-core": "4.10.3"
+  }
+}
